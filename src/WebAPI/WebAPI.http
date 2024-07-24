@@ -1,0 +1,11 @@
+# .http file:
+# It's a feature provided by Visual Studio 2022 for testing ASP.NET Core projects, particularly API applications. 
+# This file serves as a convenient way to send HTTP requests and view responses directly within Visual Studio. 
+# The Visual Studio 2022 ".http" file editor allows you to create and update ".http" files within your project.
+
+@WebAPI_HostAddress = http://localhost:5079
+
+GET {{WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
